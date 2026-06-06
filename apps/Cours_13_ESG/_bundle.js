@@ -15,7 +15,7 @@ async function startApplication() {
   self.pyodide.globals.set("sendPatch", sendPatch);
   console.log("Loaded!");
   await self.pyodide.loadPackage("micropip");
-  const env_spec = ['https://cdn.holoviz.org/panel/wheels/bokeh-3.4.3-py3-none-any.whl', 'https://cdn.holoviz.org/panel/1.4.5/dist/wheels/panel-1.4.5-py3-none-any.whl', 'pyodide-http==0.2.1', 'contextlib', 'html', 'io', 'math', 'pathlib', 'statistics']
+  const env_spec = ['https://tigi-prof-tigi.github.io/tgmaster-afe-python/apps/_vendor/wheels/bokeh-3.4.3-py3-none-any.whl', 'https://tigi-prof-tigi.github.io/tgmaster-afe-python/apps/_vendor/wheels/panel-1.4.5-py3-none-any.whl', 'pyodide-http==0.2.1', 'contextlib', 'html', 'io', 'math', 'pathlib', 'statistics']
   for (const pkg of env_spec) {
     let pkg_name;
     if (pkg.endsWith('.whl')) {
